@@ -164,48 +164,328 @@
   
   /* Success Section */
   .success {
-    background: #e7f3e7;
-    text-align: center;
-    padding: 30px 10px;
-  }
-  
-  /* Pricing Section */
-  .pricing {
-    background: #fff;
-    padding: 40px 0;
-  }
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .pricing-card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
     text-align: center;
   }
-  .pricing-card p {
-    margin: 10px 0;
-  }
   
-  /* FAQ Section */
-  .faq {
-    padding: 40px 0;
-    background: #f9f9f9;
-  }
-  .faq-item {
+  .success h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: #333;
   }
-  .faq-item h3 {
+  
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .stat-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+    color: #007bff;
     margin-bottom: 10px;
   }
   
+  .stat-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .rating-stars {
+    font-size: 1.5rem;
+    color: #f7b731;
+    margin-bottom: 10px;
+  }
+  
+  .pricing {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .pricing h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-grid {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pricing-card {
+    background: linear-gradient(135deg, #007bff, #4facfe);
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease;
+  }
+  
+  .pricing-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    margin: 20px 0;
+  }
+  
+  .old-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #ffdddd;
+    margin-right: 10px;
+  }
+  
+  .new-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fffa65;
+  }
+  
+  .pricing-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .offer-timer {
+    font-size: 0.9rem;
+    color: #ffd700;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .cta-btn {
+    background: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #ffc107;
+  }
+
+  /* testimonal  */
+  .testimonial {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonial h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .testimonial-card {
+    background: linear-gradient(135deg, #007bff, #4facfe);
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    max-width: 350px;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+  
+  .testimonial-card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffd700;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card {
+      margin-bottom: 20px;
+    }
+  }
+/* frequenty asked section    */
+  
+.faq {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.faq-item a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.faq-item a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .faq-item {
+    margin-bottom: 20px;
+  }
+}
+
+  
   /* Contact Section */
   .contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 30px 10px;
   }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+    color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .contact-item span:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-item {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .contact-item img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
   
   /* Footer */
   footer {
