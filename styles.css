@@ -21,47 +21,19 @@
     color: #4CAF50;
     text-decoration: none;
   }
-  
   .header {
     background: url('backgroundnew.jpg') no-repeat center center;
     background-size: contain; /* Image ko container ke andar fit karne ke liye */
-    background-color: rgb(254,118,30); /* Jo extra space ho, wo black se fill ho jayega */
+    background-color: rgb(254, 118, 30); /* Jo extra space ho, wo color se fill ho jayega */
     color: white;
     text-align: center;
     padding: 60px 20px;
     height: 70vh;
+    position: relative; /* Ensures elements can be positioned inside the header */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-  
-  .header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
-  }
-  
-  .header p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 30px;
-  }
-  
-  /* CTA Button */
-  .cta-btn {
-    background: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
   }
   
   .header h1 {
@@ -69,7 +41,6 @@
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
-    animation: fadeInDown 1s ease-out;
   }
   
   .header p {
@@ -81,23 +52,36 @@
   }
   
   .header .cta-btn {
+    position: absolute; /* Positions it relative to the header container */
+    bottom: 20px; /* Pushes it 20px above the bottom of the header */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Ensures the button is perfectly centered */
     background: #4CAF50;
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
     border: none;
+    left: 25%;
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     animation: bounce 2s infinite;
-    transition: transform 0.3s,  0.3s;
+    transition: transform 0.3s, 0.3s;
   }
   
   .header .cta-btn:hover {
     transform: scale(1.1);
     background: #3e8e41;
   }
+
+  .header .cta-btn #timer {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #FFD700; /* Golden color for the countdown timer */
+}
+  
   
   /* Features Section */
   .features {
