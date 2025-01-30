@@ -213,6 +213,9 @@
     color: #f7b731;
     margin-bottom: 10px;
   }
+
+
+  /* pricing  */
   
   .pricing {
     padding: 50px 20px;
@@ -272,13 +275,13 @@
     font-size: 1rem;
     margin: 10px 0;
   }
-  
   .offer-timer {
     font-size: 0.9rem;
     color: #ffd700;
     font-weight: bold;
     margin-top: 10px;
   }
+
   
   .cta-btn {
     background: #ffd700;
@@ -496,20 +499,7 @@
     font-size: 0.9rem;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .header{
-        background: url(shortnew.jpg) no-repeat center center;
-        height: 100vh;
-        background-size: contain;
-        background-color: rgb(254,118,30);
-    }
-    .header h1 {
-      font-size: 2rem;
-    }
-    .feature-grid, .pricing-grid {
-      grid-template-columns: 1fr;
-    }
+
 
     /* Make CTA Button stick to the bottom */
 .cta-btn {
@@ -529,11 +519,10 @@
     transition: transform 0.3s;
 }
 
-.cta-btn:hover {
+.cta-btn:hover{
     transform: scale(1.1); /* Button scale effect on hover */
     background: #3e8e41;
 }
-
 
   /* Keyframes for Animations */
   @keyframes fadeIn {
@@ -569,7 +558,20 @@
       transform: translateY(-5px);
     }
   }
-  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header{
+          background: url(shortnew.jpg) no-repeat center center;
+          height: 100vh;
+          background-size: contain;
+          background-color: rgb(254,118,30);
+      }
+      .header h1 {
+        font-size: 2rem;
+      }
+      .feature-grid, .pricing-grid {
+        grid-template-columns: 1fr;
+      }
   
   }
   
