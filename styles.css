@@ -22,7 +22,7 @@
     text-decoration: none;
   }
   .header {
-    background: url('backgroundnew.jpg') no-repeat center center;
+    background: url('backgroundnnew.jpg') no-repeat center center;
     background-size: contain; /* Image ko container ke andar fit karne ke liye */
     background-color: rgb(254, 118, 30); /* Jo extra space ho, wo color se fill ho jayega */
     color: white;
