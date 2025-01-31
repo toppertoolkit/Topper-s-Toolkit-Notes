@@ -556,6 +556,8 @@
       .feature-grid, .pricing-grid {
         grid-template-columns: 1fr;
       }
+
+      
   
   }
   
