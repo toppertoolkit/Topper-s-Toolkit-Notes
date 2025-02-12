@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const bookButton = document.getElementById('book-Btn');
     const PyqButton = document.getElementById('pyq-Btn');
     const formulaeButton = document.getElementById('formulae-Btn');
+    const ordernow = document.getElementById('cta-btn-timer');
 
     // Function to update the countdown every second
     function updateCountdown() {
@@ -43,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Open the Google Drive link in a new tab
+    ordernow.addEventListener('click', function () {
+        window.open('https://wa.me/+917599982188', '_blank');
+      });
     shortNotesButton.addEventListener('click', function () {
         window.open('https://drive.google.com/drive/folders/1kcDuIHf867gqpx0KO8iJyvbTkWftMQIR?usp=sharing', '_blank');
       });
