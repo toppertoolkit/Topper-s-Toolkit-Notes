@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Open the Google Drive link in a new tab
     ordernow.addEventListener('click', function () {
-        window.open('https://wa.me/+917599982188', '_blank');
+        window.open('https://wa.me/+917599982188?text=Hi,%20I%20want%20to%20purchase%20notes', '_blank');
       });
     shortNotesButton.addEventListener('click', function () {
         window.open('https://drive.google.com/drive/folders/1kcDuIHf867gqpx0KO8iJyvbTkWftMQIR?usp=sharing', '_blank');
